@@ -1,6 +1,8 @@
 $(document).ready(function () {
-     var xx = Component("#simContainer",".sim-obj");
-    console.log(xx);
-
+    $(".nav-hidden-icon").click(function(){
+        $(".nav").removeClass("d-none");
+        $(".nav").hide();
+        $(".nav").fadeIn();
+    })
 
 })
