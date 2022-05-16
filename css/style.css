@@ -48,6 +48,21 @@ body{
 .nav .nav-text {
     padding:10px;
     cursor: pointer;
+    transition: .4s;
+}
+.nav  a{
+    color: #3f3f3f;
+}
+.nav .nav-text:hover{
+    background-color: #0ca1f1   ;
+    border-radius: 5px;
+}
+
+.nav .nav-text:hover a{
+    color:#fff;
+}
+.nav-item .btn a{
+    color: #f2f2f2;
 }
 .banner{
     min-height: 300px;
