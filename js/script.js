@@ -4,7 +4,7 @@ $(document).ready(function () {
         $(".nav").hide();
         $(".nav").fadeIn();
     })
-    $('.control-headding').click(function(){
+    $('.control-heading').click(function(){
         $(this).parent('#controls').children(2).fadeToggle();
     });
     $(window).scroll(function() {
