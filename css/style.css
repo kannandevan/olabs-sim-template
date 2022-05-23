@@ -93,9 +93,7 @@ body{
     transition: .5S;
 
 }
-.btn-olabs{
-display: jj;
-}
+
 .sub-btn:hover .btn-olabs{
     background-color: #cecece;
 

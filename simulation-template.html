@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1" />
+    <title>Simulation title</title>
+    <link rel="stylesheet" href="css/metronic/bootstrap.min.css">
+    <link rel="stylesheet" href="css/metronic/datatables.bundle.css">
+    <link rel="stylesheet" href="css/metronic/style.bundle.css">
+
+
+    <!-- Default simulation theme  -->
+    <link rel="stylesheet" href="css/custom-sim.css">
+
+    <script src="./js/Gettext.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/olabs.1.0.js"></script>
+
+
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <button class="btn btn-primary position-absolute btn-sim-next" id="btn-sim-next">Next</button>
+    <div class="sim-overlay"></div>
+
+    <div id="simContainer" class="sim-container">
+
+        <div class="bg-div">
+
+
+            <!-- Simulation headding:: Start -->
+            <div class="sim-top-wrapper  py-6">
+                <div class="container-fluid sim-headding">
+                    <h3><!-- SIMULATION HEADDING HERE --></h3>
+                </div>
+                <div class="exit-full-screen">
+                    <svg width="40px" height="40px" viewBox="0 0 18 18">
+                        <path fill="#ffffff" class="minimize"
+                            d="M4.5 11H3v4h4v-1.5H4.5V11zM3 7h1.5V4.5H7V3H3v4zm10.5 6.5H11V15h4v-4h-1.5v2.5zM11 3v1.5h2.5V7H15V3h-4z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="sim-side">
+                <div class=" d-flex flex-row">
+                    <div class="sim-side-container">
+                        <div class="sim-side-btn px-10">
+                            Procedure
+                        </div>
+                    </div>
+                    <div class="sim-side-container">
+                        <div class="sim-side-btn px-10">
+                            Theory
+                        </div>
+                    </div>
+                    <div class="sim-side-container">
+                        <div class="sim-side-btn px-10">
+                            X
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Side buttons :: End  -->
+            <div class="d-flex ">
+                <div class=" flex-grow-1 sim-areas " id="simArea">
+                    <!-- 
+                        PLACE SIMULATION ASSETS HERE
+                        and write Simulation js on 
+                       " sim.script.js inside js forlder "
+                      -->
+                </div>
+                <div class="border-yy d-none d-md-block ">
+                    <div class="  controls d-flex flex-column" id="controls">
+                        <div class="control-headding d-flex  justify-content-end">
+                            <div>TOGGLE</div>
+                            
+                        </div>
+                        <div class="control-body flex-grow-1 ps-5 pe-2 py-2">
+                            <div class="sim-control-items">
+                                <!-- WRITE YOUR CONTROLS HERE -->
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="./js/script.js" defer></script>
+    
+    <script src="./js/sim.script.js" defer></script>
+
+
+</body>
+
+</html>

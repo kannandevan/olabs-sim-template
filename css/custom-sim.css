@@ -1,0 +1,1063 @@
+/* This file having default sim template styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.absolute {
+  position: absolute;
+}
+
+.bg-div {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgb(64, 68, 78);
+  background: rgb(64, 68, 78);
+  background: rgb(117, 122, 135);
+  background: -moz-linear-gradient(0deg, rgba(117, 122, 135, 1) 0%, rgba(64, 68, 78, 1) 32%, rgba(137, 138, 131, 1) 32%, rgba(63, 80, 98, 1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(117, 122, 135, 1) 0%, rgba(64, 68, 78, 1) 32%, rgba(137, 138, 131, 1) 32%, rgba(63, 80, 98, 1) 100%);
+  background: linear-gradient(0deg, rgba(117, 122, 135, 1) 0%, rgba(64, 68, 78, 1) 32%, rgba(137, 138, 131, 1) 32%, rgba(63, 80, 98, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#757a87", endColorstr="#3f5062", GradientType=1);
+}
+
+.sim-obj {
+  z-index: 100;
+}
+
+
+/* .sim-container img {
+  max-width: 100%;
+  height: auto;
+} */
+
+.controls {
+  max-width: 250px;
+  /* min-height: 200px; */
+  max-height: 350px;
+  background-color: rgb(255, 255, 255, 0.8);
+  border-radius: 20px;
+
+  overflow: hidden;
+
+}
+.sim-flex-control{
+    position: absolute;
+}
+.control-headding{
+    width: 100%;
+    padding:10px;
+    background:rgb(212, 212, 212);
+}
+.sim-components {
+  position: relative;
+}
+
+.sim-controls {
+  display: none;
+  position: absolute;
+
+
+  width: 250px;
+  min-height: 200px;
+  max-height: 350px;
+  background-color: rgb(255, 255, 255, 0.8);
+  border-radius: 20px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.sim-control-items {
+  min-height: 160px;
+  max-height: 290px;
+  overflow: auto;
+
+}
+
+.right {
+  margin-top: 10px;
+  right: 50px;
+}
+
+.left {
+  margin-top: 10px;
+
+  left: 50px;
+}
+
+.sim-headding {
+  z-index: 10000;
+  background-color: rgb(0, 0, 0, .5);
+  color: azure;
+
+}
+
+.sim-headding h3 {
+  color: azure;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.exit-full-screen {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.exit-full-screen {
+  cursor: pointer;
+
+  width: 40px;
+  height: 40px;
+}
+
+.minimize {
+  fill: #ffffff;
+}
+
+.exit-full-screen:hover .minimize {
+  cursor: pointer;
+  fill: aqua;
+  width: 30px;
+  height: 30px;
+}
+
+.sim-side {
+  position: absolute;
+  transform-origin: left;
+  left: 10px;
+  transform: rotate(90deg);
+
+
+
+}
+
+.sim-side-container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.sim-side-btn {
+  cursor: pointer;
+  height: 40px;
+  padding: 5px;
+  left: 0;
+  background-color: #a40c45;
+  border-top: solid 1px #fff;
+  color: #fff;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  letter-spacing: 3px;
+  transition: .5s;
+  ;
+
+
+}
+
+.sim-side-btn:hover {
+  background-color: #fff;
+  border-top: solid 3px #a40c45;
+  color: #a40c45;
+
+
+}
+
+
+.sim-overlay {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: rgb(0, 0, 0, .8);
+  overflow: hidden;
+  z-index: 100;
+  display: none;
+}
+
+.btn-sim-next {
+  z-index: 101;
+  margin-left: -60px;
+  margin-top: -40px;
+  left: 50%;
+  top: 50%;
+  display: none;
+}
+
+.btn-sim-next:hover {
+  /*  */
+  position: relative;
+}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {}
+
+
+@media (max-width: 1116px) {
+
+  .sim-controls,
+  .sim-side {
+    display: none;
+  }
+
+  .sim-controls-hidden-btn {
+    display: block;
+    position: absolute;
+  }
+}
+
+@media (min-width: 1116px) {
+  .sim-controls-hidden-btn {
+    display: none;
+  }
+}
+
+
+#bgImage {
+  position: absolute;
+  top: -6px;
+  left: 0px;
+  width: 571px;
+  height: 349px;
+  z-index: 1;
+
+}
+
+.main {
+  overflow: hidden;
+  z-index: 1;
+
+}
+
+#mainDiv {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+
+}
+
+#microScopeFocus {
+  position: absolute;
+  left: 536px;
+  top: 193px;
+  width: 57px;
+  height: 279px;
+  transform: rotate(0deg);
+  z-index: 100;
+}
+
+#microScopeFocus1 {
+  position: absolute;
+  left: 127px;
+  top: 14px;
+  width: 32px;
+  height: 126px;
+  transform: rotate(180deg);
+  z-index: 1;
+  display: none;
+
+}
+
+.rightminval {
+  float: left;
+  padding-left: 23px;
+  z-index: 1;
+
+}
+
+.rightmaxval {
+  float: right;
+  padding-right: 28px;
+  z-index: 1;
+
+}
+
+#microscopeStand {
+  position: absolute;
+  width: 377px;
+  top: 92px;
+  left: 225px;
+  z-index: 1;
+  cursor: default;
+}
+
+#microScopeFocus1 {
+  position: absolute;
+  left: 130px;
+  top: 14px;
+  width: 36px;
+  height: 205px;
+  transform: rotate(180deg);
+  z-index: 1;
+}
+
+#microScopeWhole1 {
+  position: absolute;
+  width: 150px;
+  left: 37px;
+  top: 47px;
+  transform: rotate(180deg);
+  z-index: 110;
+
+}
+
+#microScopeFocus {
+  position: absolute;
+  left: 536px;
+  top: 193px;
+  width: 57px;
+  height: 279px;
+  transform: rotate(0deg);
+  z-index: 100;
+}
+
+#microScopeFocus {
+  position: absolute;
+  left: 546px;
+  top: 159px;
+  width: 54px;
+  height: 279px;
+  transform: rotate(0deg);
+  z-index: 100;
+}
+
+
+#microScopeWhole {
+  position: absolute;
+  width: 251px;
+  left: -94px;
+  top: -25px;
+  transform: rotate(180deg);
+  z-index: 1;
+}
+
+#fineAdjust {
+  position: absolute;
+  left: 527px;
+  top: 48%;
+  width: 138px;
+  height: 63px;
+  transform: rotate(180deg);
+  display: block;
+  z-index: 110;
+  /* border: solid 1px red; */
+
+}
+
+#paperPlace {
+  width: 93px;
+  height: 165px;
+  position: absolute;
+  left: 526px;
+  top: 432px;
+  z-index: 1;
+  display: none;
+
+
+}
+
+#paperPlace1 {
+  width: 456px;
+  height: 152px;
+  left: -160px;
+  top: -3px;
+  position: absolute;
+  right: 14px;
+  filter: blur(1px);
+  display: none;
+
+
+}
+
+#circle {
+  border-radius: 50%;
+  background-color: #868686;
+  height: 145px;
+  top: 161px;
+  left: 849px;
+  width: 145px;
+  position: absolute;
+  overflow: hidden;
+  cursor: default;
+  display: none;
+
+}
+
+#circle1 {
+  border-radius: 50%;
+  background-color: #868686;
+  height: 145px;
+  top: 161px;
+  left: 849px;
+  width: 145px;
+  position: absolute;
+  overflow: hidden;
+  cursor: default;
+  display: none;
+}
+#glassSlab1 {
+  width: 106px;
+  height: 157px;
+  position: absolute;
+  left: 521px;
+  top: 439px;
+  z-index: 100;
+  display: none;
+}
+
+#glassSlab2 {
+  width: 106px;
+  height: 157px;
+  position: absolute;
+  left: 521px;
+  top: 439px;
+  z-index: 100;
+  display: none;
+}
+
+#glassSlab3{
+  width: 106px;
+  height: 157px;
+  position: absolute;
+  left: 521px;
+  top: 439px;
+  z-index: 100;
+  display: none;
+}
+
+
+#glassSlab1Zoom {
+  width: 702px;
+  height: 340px;
+  position: absolute;
+  left: -60px;
+  top: -53px;
+  z-index: 100;
+  display: none;
+}
+
+#placePowder {
+  width: 57px;
+  height: 87px;
+  position: absolute;
+  left: 543px;
+  top: 471px;
+  z-index: 1;
+  display: none;
+}
+
+#placePowderZoom {
+  width: 126px;
+  height: 87px;
+  position: absolute;
+  left: 8px;
+  top: 29px;
+  z-index: 100;
+  display: none;
+}
+
+#arrowTop {
+  top: 193px;
+  left: 218px;
+  z-index: 100;
+}
+
+#arrowDown {
+  top: 210px;
+  left: 218px;
+  z-index: 100;
+}
+
+.arrow {
+  position: absolute;
+  cursor: pointer;
+  font-size: 20px;
+  color: black;
+  z-index: 100;
+  transform: rotate(90deg);
+
+}
+
+#arrowLeft {
+  left: 690px;
+  top: 140px;
+  transform: rotate(90deg);
+  z-index: 100;
+
+}
+
+#arrowRight {
+  left: 690px;
+  top: 157px;
+  transform: rotate(90deg);
+  z-index: 100;
+
+}
+
+
+#arrowLeft1 {
+  left: 690px;
+  top: 140px;
+  transform: rotate(90deg);
+  z-index: 100;
+  display: none;
+  position: absolute;
+
+
+}
+
+#arrowRight1 {
+  position: absolute;
+  left: 690px;
+  top: 157px;
+  transform: rotate(90deg);
+  z-index: 100;
+  display: none;
+
+}
+
+#arrowBottom {
+  
+  top: 354px;
+  left: 770px;
+  transform: rotate(90deg);
+}
+#arrowBottom1 {
+  
+  top: 354px;
+  left: 770px;
+  transform: rotate(90deg);
+  display: none;
+}
+
+#arrowTop1 {
+  top: 372px;
+  left: 770px;
+  transform: rotate(90deg);
+
+}
+#arrowTop2 {
+  top: 372px;
+  left: 770px;
+  transform: rotate(90deg);
+display: none;
+}
+
+.slideContainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+#microfocusBox {
+  position: absolute;
+  left: 7px;
+  /* top: 95px; */
+  width: 113px;
+  height: 139px;
+  transform: rotate(180deg);
+}
+
+.rangeSlider {
+  margin: 7px 0px 0px 16px;
+}
+
+#scale {
+  position: absolute;
+  height: 520px;
+  top: 73px;
+  left: -11px;
+  width: 455px;
+  position: absolute;
+  overflow: hidden;
+  cursor: default;
+  display: none;
+
+}
+
+
+#mainScale {
+  position: absolute;
+  left: -129px;
+  top: -105px;
+  transform: rotate(270deg);
+  height: 334px;
+  width: 889px;
+  z-index: 0;
+
+}
+
+#vernierScale {
+  position: absolute;
+  height: 42px;
+  left: 187px;
+  top: 190.39999999999998px;
+  transform: rotate(270deg);
+
+}
+
+hr.new1 {
+  border: 1px solid black;
+  position: absolute;
+  height: 146px;
+  width: 2px;
+  z-index: 100;
+  top: 147px;
+  left: 921px;
+  display: none;
+
+}
+
+hr.new2 {
+  border: 1px solid black;
+  position: absolute;
+  height: 2px;
+  width: 145px;
+  z-index: 100;
+  top: 220px;
+  left: 849px;
+  display: none;
+
+
+}
+
+/* #line{
+  position: absolute;
+  height: 168px;
+  width: 169px;
+  top: 154px;
+  left: 834px;
+} */
+
+.userSelect {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.subButton {
+  width: 128px !important;
+}
+
+/*Controls*/
+.title {
+  padding: 5px 0px 0px 3px;
+}
+
+.vals {
+  padding: 0px;
+}
+
+/*canvas*/
+
+/*Stand properties*/
+.retortStand {
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 207px;
+  height: 318px;
+}
+
+#retortStands {
+  position: absolute;
+  left: 2px;
+  top: -33px;
+}
+
+#cork_rod {
+  position: absolute;
+  left: 145px;
+  top: 2px;
+  width: 6px;
+  height: 199px;
+}
+
+#microScope {
+  position: absolute;
+  top: 95px;
+  left: 246px;
+  width: 76px;
+  height: 218px;
+  z-index: 1;
+
+}
+
+
+
+
+/*zoom Circle properties*/
+#zoom_dottedlines {
+  position: absolute;
+  top: 55px;
+  left: 330px;
+  width: 125px;
+  height: 170px;
+  overflow: hidden;
+  -ms-transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  z-index: 1;
+
+}
+
+#dottedlines_img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+
+}
+
+#microScopeEyePieceZoom {
+  position: absolute;
+  left: 397px;
+  top: 7px;
+  width: 180px;
+  height: 209px;
+  z-index: 1;
+  display: none;
+
+}
+
+#zoom_img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+#mask_circle {
+  border: solid 2px #868686;
+  position: absolute;
+  background-color: #666666;
+  left: 0px;
+  top: 1px;
+  width: 154px;
+  height: 154px;
+  border-radius: 97px;
+  overflow: hidden;
+  display: none;
+}
+
+#movable_rod {
+  position: absolute;
+  left: 0px;
+  top: 103px;
+  width: 165px;
+  height: 228px;
+
+}
+
+#Pointerapp {
+  position: absolute;
+  left: 56px;
+  top: 77px;
+  width: 40px;
+  height: 372px;
+  display: none;
+  z-index: 0;
+}
+
+#Pointerapp img {
+  width: 40px;
+  height: 372px;
+  z-index: 0;
+}
+
+#waterlevel_zoom {
+  position: absolute;
+  left: 0px;
+  top: -281px;
+  width: 211px;
+  height: 333px;
+  z-index: 999;
+  z-index: 1;
+
+}
+
+#zoomtube_apparatus {
+  position: absolute;
+  left: 35px;
+  top: 0px;
+  width: 84px;
+  height: 766px;
+  z-index: 1;
+
+}
+
+#zoomTube {
+  position: absolute;
+  left: 0px;
+  top: -103px;
+  width: 84px;
+  height: 900px;
+  z-index: 1;
+
+}
+
+#Mercury_zoom {
+  position: absolute;
+  left: 0px;
+  top: -104px;
+  width: 84px;
+  height: 283px;
+  z-index: 1;
+
+}
+
+#stroke {
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 74px;
+  width: 154px;
+  border-style: inset;
+  border-width: 1px;
+  border-color: #868686 !important;
+  color: #868686 !important;
+  z-index: 1;
+
+}
+
+#strokes {
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 74px;
+  width: 154px;
+  border-style: inset;
+  border-width: 1px;
+  border-color: #868686 !important;
+  color: #868686 !important;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  z-index: 1;
+
+}
+
+/*Label lc*/
+.ResultLabel {
+  position: absolute;
+  color: #FFF;
+  cursor: default;
+  z-index: 1;
+
+}
+
+#LCReadingsLabel {
+  position: absolute;
+  left: 42px;
+  top: 4px;
+  width: 200px;
+  z-index: 1;
+
+}
+
+/*zoom scale properties*/
+#scaleZoom_big {
+  display: none;
+  background-color: #6E614E;
+  border: solid 3px #868686;
+  position: absolute;
+  left: 4px;
+  top: 2px;
+  width: 547px;
+  height: 319px;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1;
+
+}
+
+#VernierScaleLabel {
+  position: absolute;
+  left: -4px;
+  top: 154px;
+  width: 118px;
+  font-size: 13px;
+  color: #FFF;
+  cursor: default;
+  z-index: 1;
+
+}
+
+#MainScaleLabel {
+  position: absolute;
+  left: 444px;
+  top: 154px;
+  width: 118px;
+  font-size: 13px;
+  color: #FFF;
+  cursor: default;
+  z-index: 1;
+
+}
+
+#scaleZoom {
+  position: absolute;
+  left: 90px;
+  top: 2px;
+  width: 357px;
+  height: 15300px;
+  overflow: hidden;
+  z-index: 1;
+
+}
+
+#scaleZoom_inner {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 356px;
+  height: 314px;
+  cursor: all-scroll;
+  z-index: 1;
+
+}
+
+#zoomVernierScale {
+  position: absolute;
+  width: 681px;
+  height: 15248px;
+  z-index: 1;
+
+}
+
+#zoomMainScale {
+  position: absolute;
+  width: 669px;
+  height: 2628px;
+  z-index: 1;
+
+}
+
+/*Close option properties*/
+#cross_mark,
+#cross_mark_beaker {
+  position: absolute;
+  top: 5px;
+  left: 526px;
+  display: none;
+  cursor: pointer;
+}
+
+.cross_img {
+  width: 28px;
+  height: 28px;
+}
+
+.cursorClass {
+  cursor: zoom-in;
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+}
+
+/*Beaker Zoom  properties*/
+#toggle_zoombox {
+  position: absolute;
+  left: 4px;
+  top: 3px;
+  width: 550px;
+  height: 320px;
+  border: 2px solid #FFF;
+  border-radius: 15px;
+  background-color: #6E614E;
+  overflow: hidden;
+  display: none;
+}
+
+#zoom_tubes {
+  position: absolute;
+  left: 46px;
+  top: 0px;
+  width: 250px;
+  height: 250px;
+
+}
+
+#zoomsmall_tube {
+  position: absolute;
+  left: 181px;
+  top: -39px;
+
+}
+
+#zoom_big_tube {
+  position: absolute;
+  left: 252px;
+  top: -101px;
+}
+
+#zoombox_beaker {
+  position: absolute;
+  left: 146px;
+  top: 69px;
+}
+
+#zoombox_stand {
+  position: absolute;
+  left: -30px;
+  top: -331px;
+}
+
+#showAns {
+  position: relative;
+}
+
+#answer {
+  margin: 19px 0px 0px 6px;
+}
+
+#answerLabel {
+  padding: 15px 0px 7px 0px;
+}
+
+#resultLabel {
+  padding: 8px 0px 0px 2px;
+}

@@ -4,6 +4,9 @@ $(document).ready(function () {
         $(".nav").hide();
         $(".nav").fadeIn();
     })
+    $('.control-headding').click(function(){
+        $(this).parent('#controls').children(2).fadeToggle();
+    });
     $(window).scroll(function() {
         var $height = $(window).scrollTop();
       if($height > 50) {
