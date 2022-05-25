@@ -3,6 +3,9 @@
 .absolute{
     position: absolute;
 }
+.sim-container{
+    overflow: hidden;
+}
 .bg-div{
     z-index: 0;
     position: absolute;
