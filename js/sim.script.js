@@ -3,12 +3,10 @@
 
 $(document).ready(function(){
   var component = new Component("#simContainer",".sim-obj");
-  console.log(component);
+  var xx = component.getComponents();
   $(window).resize(function(){
-    component.setResponsive;
-
+     var yy = component.setResponsive(xx);
   })
-  console.log(component)
-  // component.setResponsive();
+  //  component.setResponsive(component);
 
 })

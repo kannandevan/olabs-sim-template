@@ -3,6 +3,7 @@
     height: auto;
     top:300px;
     left: 200px;
+    position: absolute;
 
 }
 .eth-bottle-cap{
@@ -20,4 +21,7 @@
 .eth-shadow{
     top:194px;
     z-index: 1;
+}
+.sim-obj{
+    object-fit: 100%;
 }

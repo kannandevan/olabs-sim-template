@@ -71,35 +71,13 @@ Component constructor having two variables
 2 - componentsClass : this is a common class for all components inside the simulation Area
 ---------------------------------------------------------------------------------------------------*/
 var simContainer;
-function Component(simAreaId, componentsClass) {
+function Component(componentsClass) {
     
-    this.simAreaId = simAreaId;
-    simContainer = simAreaId;
-    $(this.simAreaId).height("100vh");
-    this.simWidth = $(this.simAreaId).width();
-    this.simHeight = $(this.simAreaId).height();
-    this.left = $(this.simAreaId).position().left;
-    this.top = $(this.simAreaId).position().top;
+ 
 
-    this.setResponsive = function (componentData) {
-        console.log(componentData)
-        var newProps = [];
-        componentData.components.forEach(element => {
-
-            var {id,widthP,heightP,topP,leftP} = element;
-            var w = $(simAreaId).width() * widthP/100;
-            var h = $(simAreaId).height() * heightP/100;
-            var t = $(simAreaId).height() * topP/100;
-            var l = $(simAreaId).width() * leftP/100;
-            $(id).css({  top: t + "px", left: l + "px" });
-            newProps.push({id:id,w:w,h:h,t:t,l:l});
-
-        });
-        console.table(newProps)
-        return newProps;
-    }
+   
     this.getComponents = function(){
-        componentsPropraties = [];
+        componentsProps = [];
         $(componentsClass).each(function (index) {
 
 
@@ -125,11 +103,11 @@ function Component(simAreaId, componentsClass) {
                 topP: this.tP,
                 wHRatio: this.wHRatio
             }
-            componentsPropraties.push(this.objData);
+            componentsProps.push(this.objData);
         });
-        console.log(componentsPropraties);
+        console.log(componentsProps);
 
-        return {id:simAreaId,simWidth:this.simWidth,simHeight:this.simHeight,components:componentsPropraties};
+        return {simWidth:this.simWidth,simHeight:this.simHeight,components:componentsProps};
     }
     
 
